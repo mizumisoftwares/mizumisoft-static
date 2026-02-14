@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Quote } from 'lucide-react'
+import testimonial_chat from '@/assets/testimonial_chat.jpg'
 
 const TestimonialsSection = () => {
   const sectionRef = useRef(null)
@@ -34,7 +35,7 @@ const TestimonialsSection = () => {
           isVisible ? 'scale-100' : 'scale-110'
         }`}
         style={{
-          backgroundImage: 'url(/testimonial_chat.jpg)',
+          backgroundImage: `url(${testimonial_chat})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

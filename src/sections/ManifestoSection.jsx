@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import manifesto_city from '@/assets/manifesto_city.jpg'
 
 const ManifestoSection = () => {
   const sectionRef = useRef(null)
@@ -33,7 +34,7 @@ const ManifestoSection = () => {
           isVisible ? 'scale-100' : 'scale-110'
         }`}
         style={{
-          backgroundImage: 'url(/manifesto_city.jpg)',
+          backgroundImage: `url(${manifesto_city})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

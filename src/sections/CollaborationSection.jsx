@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
+import collab_presenting from '@/assets/collab_presenting.jpg'
 
 const CollaborationSection = () => {
   const sectionRef = useRef(null)
@@ -39,7 +40,7 @@ const CollaborationSection = () => {
           isVisible ? 'scale-100' : 'scale-110'
         }`}
         style={{
-          backgroundImage: 'url(/collab_presenting.jpg)',
+          backgroundImage: `url(${collab_presenting})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

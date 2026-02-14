@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import studio_table from '@/assets/studio_table.jpg'
 
 const StudioSection = () => {
   const sectionRef = useRef(null)
@@ -33,7 +34,7 @@ const StudioSection = () => {
           isVisible ? 'scale-100' : 'scale-110'
         }`}
         style={{
-          backgroundImage: 'url(/studio_table.jpg)',
+          backgroundImage: `url(${studio_table})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

@@ -1,5 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import { ArrowUpRight } from 'lucide-react'
+import featured_workspace from '@/assets/featured_workspace.jpg'
+import process_desk from '@/assets/process_desk.jpg'
+import capabilities_meeting from '@/assets/capabilities_meeting.jpg'
+import studio_table from '@/assets/studio_table.jpg'
+import collab_presenting from '@/assets/collab_presenting.jpg'
+import testimonial_chat from '@/assets/testimonial_chat.jpg'
 
 const ProjectsGridSection = () => {
   const sectionRef = useRef(null)
@@ -9,12 +15,12 @@ const ProjectsGridSection = () => {
   const filters = ['All', 'Product', 'Brand', 'Editorial']
 
   const projects = [
-    { title: 'Lumina Health', tags: ['Product', 'Web'], image: '/featured_workspace.jpg' },
-    { title: 'Northwind Journal', tags: ['Editorial', 'Web'], image: '/process_desk.jpg' },
-    { title: 'Kite Banking', tags: ['Product', 'UI'], image: '/capabilities_meeting.jpg' },
-    { title: 'Alma Skincare', tags: ['Brand', 'Web'], image: '/studio_table.jpg' },
-    { title: 'Civic Maps', tags: ['Product', 'UI'], image: '/collab_presenting.jpg' },
-    { title: 'Moss Agency', tags: ['Brand', 'Editorial'], image: '/testimonial_chat.jpg' },
+    { title: 'Lumina Health', tags: ['Product', 'Web'], image: `${featured_workspace}` },
+    { title: 'Northwind Journal', tags: ['Editorial', 'Web'], image: `${process_desk}` },
+    { title: 'Kite Banking', tags: ['Product', 'UI'], image: `${capabilities_meeting}` },
+    { title: 'Alma Skincare', tags: ['Brand', 'Web'], image: `${studio_table}` },
+    { title: 'Civic Maps', tags: ['Product', 'UI'], image: `${collab_presenting}` },
+    { title: 'Moss Agency', tags: ['Brand', 'Editorial'], image: `${testimonial_chat}` },
   ]
 
   const filteredProjects = activeFilter === 'All' 

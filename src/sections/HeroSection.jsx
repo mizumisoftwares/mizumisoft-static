@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { ArrowRight } from 'lucide-react'
+import hero_office from '@/assets/hero_office.jpg'
 
 const HeroSection = () => {
   const sectionRef = useRef(null)
@@ -28,7 +29,7 @@ const HeroSection = () => {
           isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
         }`}
         style={{
-          backgroundImage: 'url(/hero_office.jpg)',
+          backgroundImage: `url(${hero_office})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

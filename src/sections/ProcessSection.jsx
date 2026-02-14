@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Search, Map, Palette, Code2, Rocket, RefreshCw } from 'lucide-react'
+import process_desk from '@/assets/process_desk.jpg'
 
 const ProcessSection = () => {
   const sectionRef = useRef(null)
@@ -43,7 +44,7 @@ const ProcessSection = () => {
           isVisible ? 'scale-100' : 'scale-110'
         }`}
         style={{
-          backgroundImage: 'url(/process_desk.jpg)',
+          backgroundImage: `url(${process_desk})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

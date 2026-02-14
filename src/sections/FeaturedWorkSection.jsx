@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { ArrowRight, ExternalLink } from 'lucide-react'
+import featured_workspace from '@/assets/featured_workspace.jpg'
 
 const FeaturedWorkSection = () => {
   const sectionRef = useRef(null)
@@ -34,7 +35,7 @@ const FeaturedWorkSection = () => {
           isVisible ? 'scale-100' : 'scale-110'
         }`}
         style={{
-          backgroundImage: 'url(/featured_workspace.jpg)',
+          backgroundImage: `url(${featured_workspace})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

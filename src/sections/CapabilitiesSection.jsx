@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import { Download, Palette, Layout, Code, Layers, Sparkles, Headphones } from 'lucide-react'
+import capabilities_meeting from '@/assets/capabilities_meeting.jpg'
 
 const CapabilitiesSection = () => {
   const sectionRef = useRef(null)
@@ -43,7 +44,7 @@ const CapabilitiesSection = () => {
           isVisible ? 'scale-100' : 'scale-110'
         }`}
         style={{
-          backgroundImage: 'url(/capabilities_meeting.jpg)',
+          backgroundImage: `url(${capabilities_meeting})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

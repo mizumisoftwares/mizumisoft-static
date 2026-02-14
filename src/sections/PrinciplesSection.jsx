@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import principles_window from '@/assets/principles_window.jpg'
 
 const PrinciplesSection = () => {
   const sectionRef = useRef(null)
@@ -33,7 +34,7 @@ const PrinciplesSection = () => {
           isVisible ? 'scale-100' : 'scale-110'
         }`}
         style={{
-          backgroundImage: 'url(/principles_window.jpg)',
+          backgroundImage: `url(${principles_window})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
